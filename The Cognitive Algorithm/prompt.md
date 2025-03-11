@@ -7,3 +7,21 @@ The discussion should flow naturally, without feeling segmented, smoothly transi
 Use critical thinking to explore different perspectives, occasionally questioning common assumptions. Introduce historical context or industry trends when relevant. Keep the pace engaging and maintain a strong hook throughout to ensure maximum audience retention.
 
 Avoid unnecessary filler. Strictly no dialogue sections, no bullet points, and no segmented explanations. Maintain a single-flow narrative style that keeps the viewer immersed while effortlessly learning."
+
+
+```
+voice = "AvaNeural"
+rate = "+10%"
+
+async def text_to_speech(text, filename="output.mp3", voice=f"en-US-{voice}", rate=rate):
+    tts = edge_tts.Communicate(text, voice=voice, rate=rate)
+    audio_path = f"{filename}_{voice}.mp3"
+    await tts.save(audio_path)
+    return ipd.Audio(audio_path, autoplay=True)
+
+
+audio_output = asyncio.run(text_to_speech(text, filename=filename))
+
+print(f"Audio file {filename} is generated.")
+display(audio_output)
+```
