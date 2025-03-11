@@ -16,10 +16,10 @@ Avoid unnecessary filler. Strictly no dialogue sections, no bullet points, and n
 
 
 ```
-voice = "AvaNeural"
-rate = "+10%"
+voice = "RyanNeural"
+rate = "-5%"
 
-async def text_to_speech(text, filename="output.mp3", voice=f"en-US-{voice}", rate=rate):
+async def text_to_speech(text, filename="output.mp3", voice=f"en-GB-{voice}", rate=rate):
     tts = edge_tts.Communicate(text, voice=voice, rate=rate)
     audio_path = f"{filename}_{voice}.mp3"
     await tts.save(audio_path)
@@ -28,6 +28,8 @@ async def text_to_speech(text, filename="output.mp3", voice=f"en-US-{voice}", ra
 
 audio_output = asyncio.run(text_to_speech(text, filename=filename))
 
-print(f"Audio file {filename} is generated.")
+print(f"Audio file is generated : {filename}.")
 display(audio_output)
+
+
 ```
