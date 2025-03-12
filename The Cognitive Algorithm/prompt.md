@@ -17,7 +17,7 @@ Avoid unnecessary filler. Strictly no dialogue sections, no bullet points, and n
 
 ```
 voice = "RyanNeural"
-rate = "-5%"
+rate = "-7%"
 
 async def text_to_speech(text, filename="output.mp3", voice=f"en-GB-{voice}", rate=rate):
     tts = edge_tts.Communicate(text, voice=voice, rate=rate)
