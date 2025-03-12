@@ -7,6 +7,13 @@
 * Elevate - general must topics
 
 
+## Order of Editing the video
+1. Fill in the background for frames for entire audio
+2. add the popup graphics for the entire video
+3. add the text to emphasis using cloud or msg boxes.
+4. add the sound design for all the places in the video
+5. add the channel branding at the beginning and end of the video.
+
 
 ## Points for good video editing :
 1. make sure to use frames lessthan 3 seconds
