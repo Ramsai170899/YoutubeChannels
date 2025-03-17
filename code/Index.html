@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TTS Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Text-to-Speech Generator</h2>
+        <textarea id="text" placeholder="Enter your text here"></textarea>
+
+        <select id="gender" onchange="fetchVoices()">
+            <option value="">--Select Gender--</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+
+        <select id="voice">
+            <option value="">--Select Voice--</option>
+        </select>
+
+        <div class="controls">
+            <label>Rate: <input type="text" id="rate" value="+5%"></label>
+            <label>Pitch: <input type="text" id="pitch" value="-5Hz"></label>
+        </div>
+
+        <input type="text" id="filename" placeholder="Enter filename">
+
+        <button onclick="generateAudio()">Generate Audio</button>
+
+        <audio controls id="audioPlayer" hidden></audio>
+        <a id="download-link" href="#" download>Download Audio</a>
+    </div>
+
+<script>
+document.getElementById('download').style.display = 'none';
+
+document.getElementById('gender').addEventListener('change', async () => {
+    let gender = document.getElementById('gender').value;
+    const response = await fetch('/get_voices', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({gender})
+    });
+    const voices = await response.json();
+    let voiceSelect = document.getElementById('voice');
+    voice.innerHTML = '';
+    voices.forEach(v => {
+        voice.innerHTML += `<option value="${v[0]}">${v[1]}</option>`;
+    });
+});
+
+async function generateAudio() {
+    const data = {
+        text: document.getElementById('text').value,
+        voice: document.getElementById('voice').value,
+        rate: document.getElementById('rate').value,
+        pitch: document.getElementById('pitch').value,
+        filename: "output_audio"
+    };
+    const response = await fetch('/generate_audio', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    document.getElementById('audioPlayer').src = result.audio_file;
+    document.getElementById('audioPlayer').style.display = 'block';
+    document.getElementById('download').href = '/download/' + result.audio_file.split('/').pop();
+    document.getElementById('download').style.display = 'block';
+}
+</script>
+
+<button onclick="generateAudio()">Generate Audio</button>
+<audio controls id="audioPlayer" style="display:none;"></audio>
+<a id="download">Download Audio</a>
+
+</body>
+</html>
