@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TTS Generator</title>
+</head>
+<body>
+    <h2>Text to Speech Generator</h2>
+    <form method="POST">
+        <label for="text">Enter Text:</label><br>
+        <textarea name="text" id="text" rows="6" cols="60" required></textarea><br><br>
+
+        <label for="gender">Select Gender:</label>
+        <select name="gender" id="gender" onchange="this.form.submit()">
+            <option value="">--Select Gender--</option>
+            {% for g in genders %}
+                <option value="{{g}}" {% if request.args.get('gender')==g %}selected{% endif %}>{{g}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        {% if voices %}
+        <label for="voice">Select Voice:</label>
+        <select name="voice" id="voice">
+            {% for shortname, friendlyname in voices %}
+                <option value="{{shortname}}">{{friendlyname}}</option>
+            {% endfor %}
+        </select><br><br>
+        {% endif %}
+
+        <label for="rate">Speech Rate (+/- %): </label>
+        <input type="range" id="rate" name="rate" min="-50%" max="+50%" value="+5%"><br><br>
+
+        <label for="pitch">Pitch (+/- Hz): </label>
+        <input type="range" id="pitch" name="pitch" min="-50Hz" max="+50Hz" value="-5Hz"><br><br>
+
+        <label for="filename">File Name:</label>
+        <input type="text" id="filename" name="filename" required><br><br>
+
+        <button type="submit">Generate Audio</button>
+    </form>
+
+    {% if audio_file %}
+        <h3>Generated Audio:</h3>
+        <audio controls>
+            <source src="{{ audio_file }}" type="audio/mp3">
+            Your browser does not support audio playback.
+        </audio>
+        <br>
+        <a href="{{ url_for('download_file', filename=audio_file) }}">Download Audio</a>
+    {% endif %}
+</body>
+</html>
