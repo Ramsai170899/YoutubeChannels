@@ -1,0 +1,237 @@
+body,
+html {
+    margin: 0;
+    padding-top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    padding-top: 2%;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Verdana', 'sans-serif';
+    background: linear-gradient(270deg, #f4fab6, #68d6a5, #5083c2, #b686dc, #b9cd8b);
+    background-size: 400% 400%;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+
+    /* Continuous Gradient */
+    animation: gradientMove 4s ease infinite, fontFlow 5s ease-in-out infinite;
+}
+
+/* Gradient Keyframes */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Font Keyframes */
+@keyframes fontFlow {
+    0% {
+        letter-spacing: 2px;
+        transform: scale(1);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        letter-spacing: 5px;
+        transform: scale(1.05);
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    100% {
+        letter-spacing: 2px;
+        transform: scale(1);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.background {
+    background: url('https://i.pinimg.com/originals/0f/b2/88/0fb288a519fdb745d0b773d87a6aaf2e.gif') no-repeat center center/cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: moveBackground 5s linear infinite;
+    z-index: -2;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+    z-index: -1;
+}
+
+.main-heading {
+    text-align: center;
+    color: white;
+    font-size: 2.8em;
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: calc(100% - 80px);
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+    padding-left: 20px;
+    opacity: 90%;
+}
+
+
+.left-panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel textarea {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    font-size: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgb(199, 184, 225);
+    resize: none;
+    font-family: 'serif';
+    font-weight: lighter;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+}
+
+.left-panel textarea:focus {
+    border: 1px solid #00c6ff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
+}
+
+.right-panel {
+    width: 90%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.form-group label {
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+select,
+input[type="range"] {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    color: rgb(199, 184, 225);
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+select:focus,
+input[type="range"]:focus {
+    border: 1px solid #00c6ff;
+    outline: none;
+    color: rgb(125, 116, 142);
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
+}
+
+
+
+input[type="text"],
+select,
+input[type="range"],
+button {
+    transition: all 0.4s ease;
+}
+
+
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 12px;
+    background: linear-gradient(45deg, #58cfda, #9b86df);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #58cfda, #9b86df);
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.download {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.download a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #90ee90;
+    text-align: center;
+}
+
+input[type="range"] {
+    margin-top: 8px;
+}
