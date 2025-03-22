@@ -1,4 +1,5 @@
 
+Shorts
 ```
 Topic : 
 
@@ -6,8 +7,8 @@ explain the concept in a very detailed and simple manner. have a clear structure
 ready-to-use YouTube script under 3 minutes without narration style and without any voice cues. 
 don't include figures like 1,00,000 or anything else instead use words like 1 lakh
 ```
-
-
+# 
+Long videos
 ```
 Topic : 
 
