@@ -2,7 +2,7 @@
 
 | **#** | **Video Idea Title**                                                                     | **Monetization Angle**                          |
 |------|-----------------------------------------------------------------------------------------|------------------------------------------------|
-| 1    | **What is Personal Finance? (Beginner Guide)**✔️                                           | AdSense                                        |
+| 1    | **What is Personal Finance? (Beginner Guide)** ✔️                                           | AdSense                                        |
 | 2    | **How to Budget Your Salary Effectively (50/30/20 Rule Explained)**                      | AdSense + Promote Budget Planner Template      |
 | 3    | **5 Apps to Track Expenses & Save More Money**                                           | Affiliate (Expense Apps)                       |
 | 4    | **How to Start Investing in the Stock Market (Simple Explanation)**                      | Affiliate (Zerodha, Groww, Upstox links)       |
