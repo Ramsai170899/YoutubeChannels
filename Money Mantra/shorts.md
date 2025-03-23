@@ -2,10 +2,10 @@
 
 
 ## 1️⃣ **Personal Finance Tips: Budgeting, Debt Management, Saving Hacks**
-1. What is Budgeting? Explained in 30 Seconds ✔️
-2. 50/30/20 Rule: Simplest Way to Budget ✔️
-3. Difference Between Wants vs Needs ✔️
-4. How to Track Your Expenses Daily
+1. What is Budgeting? Explained in 30 Seconds ✔️✔️✔️
+2. 50/30/20 Rule: Simplest Way to Budget ✔️✔️✔️
+3. Difference Between Wants vs Needs ✔️✔️✔️
+4. How to Track Your Expenses Daily ✔️
 5. One Simple Trick to Save ₹5000 Every Month
 6. Why You Need an Emergency Fund
 7. 3 Common Money Wasting Habits
