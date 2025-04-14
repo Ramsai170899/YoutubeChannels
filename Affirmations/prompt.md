@@ -1,3 +1,5 @@
+```
+
 Create a 10-minute affirmation script centered around the core statement:
 
 
@@ -19,3 +21,6 @@ Repeatedly return to the affirmation, but don't overuse it—use it meaningfully
 End the script with a powerful, emotional reminder and call to belief. Leave the listener feeling empowered, seen, and grounded.
 
 The tone should be warm, calming, and uplifting—like a wise mentor speaking to their inner self. Avoid overused clichés or robotic repetition. Use vivid language, emotional depth, and sensory imagery to create immersion.
+
+
+```
