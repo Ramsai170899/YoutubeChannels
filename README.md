@@ -23,3 +23,15 @@
 5. frames should have movement nearly for almost all the key words in the narration.
 6. donot make the screen look clumsy at any point of time in the video.
 7. make sure to use match and move transition for eye catchy movements in the video.
+
+
+## YouTube Upload Schedule
+
+| **Day**     | **Channel 1 (Facts)** | **Channel 2 (Computer Science)** | **Channel 3 (Motivation)** |
+|-------------|------------------------|----------------------------------|-----------------------------|
+| **Monday**  | Long + Short           |                                  | Short                       |
+| **Tuesday** |                        | Long + Short                     |                             |
+| **Wednesday**| Short                 |                                  | Long + Short                |
+| **Thursday**| Long + Short           | Short                            |                             |
+| **Friday**  |                        | Long + Short                     | Short                       |
+
