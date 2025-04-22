@@ -1,4 +1,5 @@
-1-10: Unusual Professions + Digital Platforms
+### 1-10: Unusual Professions + Digital Platforms
+
 "A plumber’s TikTok videos fixing leaks went viral—now he sells online courses and earns ₹10L/month."
 
 "A school teacher started a ‘Math Memes’ Instagram page—brands pay her ₹50k/post to reach students."
@@ -21,7 +22,8 @@
 
 ----
 
-11-20: Reversed Tropes
+### 11-20: Reversed Tropes
+
 "An IAS officer quit to open a chain of tea stalls—proves ‘stable jobs’ aren’t the only path to wealth."
 
 "A billionaire’s son started as a Zomato delivery guy to learn ground reality—now runs India’s top cloud kitchen."
@@ -44,7 +46,8 @@
 
 ---
 
-21-30: Real-World News Inspiration
+### 21-30: Real-World News Inspiration
+
 "A Kerala fisherman’s ‘banana chips’ went viral after a tourist’s tweet—exports to 6 countries now."
 
 "A Mumbai dabbawala started delivering gourmet meals—charges ₹500/box for NRIs craving home food."
@@ -67,7 +70,8 @@
 
 ---
 
-31-40: Hobbies Turned Profitable
+### 31-40: Hobbies Turned Profitable
+
 "A guy who doodled in meetings now sells NFT art for ₹20L/piece."
 
 "A college student’s meme page got acquired by a media company for ₹75L."
@@ -90,7 +94,8 @@
 
 ---
 
-41-50: Extreme Scarcity → Success
+### 41-50: Extreme Scarcity → Success
+
 "A refugee sold handmade candles—now employs 200 refugees in her factory."
 
 "A cancer survivor’s blog about cheap treatments became a healthcare startup."
